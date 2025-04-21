@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga la App de Medicina Tradicional</title>
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>BioSerene App</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">¿Qué es CalmaNatural?</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="formulario.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="app-highlight-section">
+
+
+        <div class="app-header">
+            <img src="img/logoapp.png" alt="Icono de la app">
+            <div class="app-title">
+                <h1>BioSerene </h1>
+                <p class="ratings">★★★★☆ (4.5)</p>
+                <p>Categoría: Servicios a la salud</p>
+            </div>
+        </div>
+
+        <p class="app-description">
+            Esta es la mejor aplicación para complementar tu tratamiento, mantente al tanto con la tecnología y la
+            innovación, sientase reconfortado con nuestra app. ¡Descarga y pruébala ahora!
+        </p>
+
+        <div class="carousel">
+            <img src="img/imag2.png" alt="Captura 1" onclick="openModal('img/imag2.png')">
+            <img src="img/imag2.png" alt="Captura 2" onclick="openModal('img/imag2.png')">
+            <img src="img/imag3.png" alt="Captura 3" onclick="openModal('img/imag3.png')">
+            <img src="img/imag3.png" alt="Captura 4" onclick="openModal('img/imag3.png')">
+            <img src="img/imag3.png" alt="Captura 5" onclick="openModal('img/imag3.png')">
+        </div>
+
+        <div id="modal" class="modal" onclick="closeModal(event)">
+            <img id="modal-image" src="" alt="Imagen Ampliada">
+        </div>
+
+
+
+        <script>
+           
+            function openModal(src) {
+                const modal = document.getElementById('modal');
+                const modalImage = document.getElementById('modal-image');
+                modalImage.src = src;
+                modal.style.display = 'flex';
+            }
+
+
+            function closeModal(event) {
+                const modal = document.getElementById('modal');
+
+                if (event.target === modal || event.target.classList.contains('close')) {
+                    modal.style.display = 'none';
+                }
+            }
+        </script>
+
+        <button>Instalar</button>
+    </div>
+
+
+    <div class="container">
+        <div class="hero">
+            <h1>Sabiduría Ancestral con Innovación</h1>
+            <p>Descubre remedios y consejos ancestrales con diseño moderno y accesible.</p>
+            <a href="#" class="btn">Descargar la App</a>
+
+
+            <div class="download-section">
+                <h2>Descarga nuestra aplicación</h2>
+                <p>Disponible para Android e iOS</p>
+                <div class="buttons">
+                    <div class="button-container">
+                        <img src="img/android.png" alt="Logo Android" class="logo">
+                        <a href="enlace_android" class="button android">Descargar para Android</a>
+                    </div>
+                    <div class="button-container">
+                        <img src="img/apple.png" alt="Logo iOS" class="logo">
+                        <a href="enlace_ios" class="button ios">Descargar para iOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="features">
+            <div class="feature">
+                <h3>Conocimiento de Plantas</h3>
+                <p>Accede a una base de datos completa de plantas medicinales.</p>
+            </div>
+            <div class="feature">
+                <h3>Asistencia en Línea</h3>
+                <p>Consulta rápidamente con expertos en medicina natural.</p>
+            </div>
+            <div class="feature">
+                <h3>Cultura y Tradición</h3>
+                <p>Explora el valor cultural detrás de la medicina tradicional.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="comentarios">
+        <h2>Sección de Comentarios</h2>
+
+        <div class="comentario">
+            <img src="img/iconperfil3.png" alt="Imagen de Mauricio" class="imagen-perfil">
+            <p><strong>Mauricio:</strong> Este producto ha sido una maravilla en mi vida. Es increíble cómo combina la
+                sabiduría ancestral con soluciones efectivas para mi salud, y la app es súper fácil de usar y tiene
+                información detallada sobre cada producto. Me hace sentir más segura al tomar decisiones sobre mi
+                salud."</p>
+        </div>
+        <div class="comentario">
+            <img src="img/iconperfil2.png" alt="Imagen de Mauricio" class="imagen-perfil">
+            <p><strong>Eduardo:</strong>"La combinación de tecnología moderna con tradiciones antiguas es simplemente
+                impresionante. La app está muy bien diseñada. </p>
+        </div>
+        <div class="comentario">
+            <img src="img/iconperfil.jpg" alt="Imagen de Mauricio" class="imagen-perfil">
+            <p><strong>Marbella:</strong>Es como tener un experto en medicina tradicional en el bolsillo. Muy práctica y
+                educativa. Un remedio confiable que no solo funciona, sino que también honra nuestra herencia cultural.
+                Muy recomendado. </p>
+        </div>
+        <div class="comentario">
+            <img src="img/iconperfil4.jpg" alt="Imagen de Mauricio" class="imagen-perfil">
+            <p><strong>Raquel:</strong>Un remedio totalmente natural que ha transformado mi salud. Lo recomiendo a todos
+                los que buscan alternativas tradicionales, la app tiene una interfaz muy intuitiva. Encuentro toda la
+                información que necesito con facilidad </p>
+        </div>
+
+
+        <form id="nuevo-comentario">
+            <h1 class="title">Añade un comentario</h1>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            <br>
+            <button type="submit" id="submitButton">Enviar</button>
+        </form>
+        <div id="message" class="hidden">Comentario enviado exitosamente!</div>
+    </section>
+    <script src="js/comentario.js"></script>
+
+
+    <div class="footer">
+        <p>&copy; 2025 Medicina Tradicional. Todos los derechos reservados. | <a
+                href="https://www.instagram.com">Síguenos en Instagram</a></p>
+    </div>
+</body>
+
+</html>
