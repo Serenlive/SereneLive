@@ -13,7 +13,7 @@
 });
 
 //efectos de las imagenes
-    const images = ["img/logoapp.png", "img/img2.jpg", "img/img3.jpg"];
+    const images = ["img/presentacion.jpg", "img/img2.jpg", "img/img3.jpg"];
     let currentIndex = 0;
 
     setInterval(() => {

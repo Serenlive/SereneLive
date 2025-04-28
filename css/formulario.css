@@ -15,7 +15,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #2C3E50;
+    background-color: #3C4C3C;
     color: white;
     padding: 15px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,7 +90,7 @@ nav ul li a:hover {
 }
 
 h1 {
-    color: #4CAF50;
+    color: #3C4C3C;
     margin-bottom: 20px;
 }
 
@@ -121,7 +121,7 @@ textarea {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #5C6C5C;
     color: white;
     font-size: 16px;
     border: none;
@@ -136,7 +136,7 @@ button:hover {
 
 /*FOOTER*/
 .footer {
-    background-color: #2C3E50;
+    background-color: #3C4C3C;
     color: white;
     text-align: center;
     padding: 30px 0;
